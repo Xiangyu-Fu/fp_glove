@@ -51,3 +51,8 @@ This product inspires me that I can install some IMU in the top of the finger to
 ### 评论
 
 In this paper it indicates that I can use FPC to make the flex sensor. 
+
+# sensors
+## 1.Recent Progress in Flexible Pressure Sensor Arrays
+
+[Link](https://www.mdpi.com/2079-4991/12/14/2495)
