@@ -1,7 +1,7 @@
 # Review of the potential implemetation of sensing GLOVES
 ## 1. A Low-cost Sensor Glove with Vibrotactile Feedback and Multiple Finger Joint and Hand Motion Sensing for Human-Robot Interaction
 
-<img src="https://www.researchgate.net/profile/Elmar-Rueckert/publication/303759179/figure/fig3/AS:667602678456320@1536180290338/The-low-cost-sensor-glove-can-be-used-for-teleoperation-of-complex-robots-with-five.jpg" width="500">
+![<img src="https://www.researchgate.net/profile/Elmar-Rueckert/publication/303759179/figure/fig3/AS:667602678456320@1536180290338/The-low-cost-sensor-glove-can-be-used-for-teleoperation-of-complex-robots-with-five.jpg" width="500"> 1](images/a7b0239e15396c6e6d89e2ca5c0e34520044f117b7d638b24a1eccb3503d9368.png)  
 
 
 
@@ -18,10 +18,12 @@
 
 传感器部分主要由两个部分组成，分别是IMU和Flex sensors, 结构比较简单，能获得传感器信息比较单一，个人感觉能提供的信息有限。
 
+---
 
 ## 2. Ready-to-wear strain sensing gloves for human motion sensing
 
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S2589004221004934-gr4.jpg" width="500">
+![picture 9](images/e8f73921c341b2ccd5ba97d133e589937eb5b1c1e7e050af51ffd4a7cc752e04.png)  
+
 
 [Link](https://www.sciencedirect.com/science/article/pii/S2589004221004934)
 
@@ -29,13 +31,14 @@
 
 像是一种新的传感器设计应用设计方法了，感觉能在我的项目中借鉴的用处不大。
 
-
+---
 ## 3. senso Suit
 https://senso.me/
 
 
-<img src="https://dl.dropboxusercontent.com/s/niaghuu212wgfad/g_main.webp?dl=0
-" width="500">
+![<img src="https://dl.dropboxusercontent.com/s/niaghuu212wgfad/g_main.webp?dl=0
+" width="500"> 1](images/68c41c46547ae1873bc2c434c3aa845994c4fdb01f9cb4cc98eadc1e385c0910.webp)  
+
 
 
 
@@ -44,10 +47,11 @@ https://senso.me/
 ### 评论
 This product inspires me that I can install some IMU in the top of the finger to get the position of the finger. Maybe later I need to consider how to fuse those data.
 
+---
 ## 4.High-density conformable tactile sensing glove
 
-<img src="images/../1.png" width="500">
-
+![<img src="images/../1.png" width="500">
+ 1](images/87ce6d63ba3f92b483395432f960bee9eea1c4e1997116bd8eb26357f8062eaa.png)  
 
 
 [Link](https://ieeexplore.ieee.org/document/6100898)
@@ -77,9 +81,8 @@ This product inspires me that I can install some IMU in the top of the finger to
 
 
 ## 6. Grasp to See—Object Classification Using Flexion Glove with Support Vector Machine
+![picture 5](images/c522a43feb17956a521885d60ef4e339ecc1fdb86b0e4a330efb0baaca1596ad.png)  
 
-<img src="https://www.researchgate.net/publication/349465549/figure/fig1/AS:993334004838400@1613840690060/An-overview-of-the-proposed-flexion-glove-a-A-photo-of-the-flexion-glove-b-The.jpg
-" width="500">
 
 [Link](https://www.researchgate.net/figure/An-overview-of-the-proposed-flexion-glove-a-A-photo-of-the-flexion-glove-b-The_fig1_349465549)
 
@@ -96,8 +99,8 @@ This product inspires me that I can install some IMU in the top of the finger to
 ## 7. TeleFMG: A Wearable Force-Myography Device for Natural Teleoperation of Multi-finger Robotic Hands
 
 
-<img src="https://www.researchgate.net/publication/373450836/figure/fig2/AS:11431281184255347@1693278990482/The-TeleFMG-system-including-two-bands-with-14-FSR-senors-each-and-the-sensor-glove-for.ppm
-" width="500">
+![picture 6](images/8f53b262c3c9664b0d2b389e6e98ef4ec0b3d9b8e788294f36dc456aedb42ffc.png)  
+
 [Link](https://www.researchgate.net/figure/The-TeleFMG-system-including-two-bands-with-14-FSR-senors-each-and-the-sensor-glove-for_fig2_373450836)
 
 ### 摘要
@@ -111,8 +114,8 @@ This product inspires me that I can install some IMU in the top of the finger to
 
 ## 8. Smart Glove for Augmented and Virtual Reality
 
-<img src="https://www.researchgate.net/profile/Klodian-Dhoska/publication/351077073/figure/fig2/AS:1015942725255170@1619231029800/Glove-prototype-with-16-MPU-6050.jpg
-" width="500">
+![picture 7](images/5189f3c6c310428f71d6921a6f6692c3a25b79ddd9dd5de9a25f81bf1806d761.png)  
+
 
 [Link](https://www.researchgate.net/publication/351077073_Smart_Glove_for_Augmented_and_Virtual_Reality)
 
@@ -126,6 +129,43 @@ This product inspires me that I can install some IMU in the top of the finger to
 使用MALTAB处理数据。
 
 
-## 9.Recent Progress in Flexible Pressure Sensor Arrays
+## [REVIEW] 9.Recent Progress in Flexible Pressure Sensor Arrays
+
+
+![picture 8](images/de8423b26bd0ef6c1bf7abc5c0d6a0d669e208a748448ed019f58604430cf040.png)  
 
 [Link](https://www.mdpi.com/2079-4991/12/14/2495)
+
+### 摘要
+柔性压力传感器可以将外部压力刺激转换成电信号[10]。传统的转换机制，如压阻式、电容式、压电式和摩擦电式，广泛应用于柔性压力传感器。其他转导方法正在快速发展，以迎接新的挑战和机遇。在本节中，我们将简要介绍四种类型的压力传感器，解释相应的传感机制和活性材料，并介绍如何提高其性能。此外，我们还总结了具有不同传导机制的传感器的主要优点和缺点。
+
+
+### 评论
+关于柔性传感器的综述，感觉用不太上。我这个项目偏向于系统工程，应该不会涉及到新的传感器应用。
+
+[TODO]忽然想到，目前的的传感器都是基于以上那几种，并没有基于FOC等驱动方式，或许这是一个很好的方向。在未来多做一些尝试。
+
+
+## [REVIEW] 10. A Survey of Glove-Based Systems and Their Applications
+
+出于本文的目的，我们将基于手套的系统定义为由传感器阵列、用于数据采集/处理和供电的电子设备以及可佩戴在用户手上的传感器支架组成的系统。
+
+![picture 0](images/c310ab7162f664d9478b8c5ddbe0cc1446c43546300b01ace91a8bdbdfddf29d.png)  
+
+
+### 评论
+一般性的综述，把各种手部数据采集的解决方案进行了汇总和介绍。目前看来有高于我的目标，作为拓展性材料比较好。
+
+## 11. Sensorized Glove for Measuring Hand Finger Flexion for Rehabilitation Purposes
+
+
+![picture 1](images/dab322ebe9540fd5496154d43ad79bbfd6b5d86713ac59e37e82bddeab8f1790.png)  
+
+
+[Link](https://ieeexplore.ieee.org/abstract/document/6566034)
+
+### 摘要
+过去30年来，科学技术进步推动了能够帮助患者和支持医务人员的医疗设备的发展。对于遭受创伤的患者的康复，机器人系统可以帮助患者快速康复。本文重点研究和实现一种测量单手手指位置的系统，旨在向康复系统提供反馈。它由手套组成，手套上安装有适当配置的传感器，并连接到电子调节和采集单元。然后，有关位置的信息被发送到远程系统。本文的目的是提供一种用于监测手部康复活动的传感手套。该手套还有其他几种应用，例如：1）手语识别； 2）远距离手指运动的诊断测量； 3）与虚拟现实的交互。
+
+### 评论
+也是采用了一轴的Flex sensor,所以这么看来，我们的解决方案是一种之前没有用过的创新。
