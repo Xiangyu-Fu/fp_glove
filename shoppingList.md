@@ -1,19 +1,24 @@
+# ESP32
+https://www.reichelt.de/d1-mini-kompatibles-esp8266-board-v2-0-d1-mini-p253978.html  x2
 
-FORCE SENSOR:
+## IMU 
 
-https://www.amazon.de/-/en/Force-Sensor-Precision-Resistance-Pressure/dp/B07P9Z7FR6/ref=sr_1_8?crid=2QJ2UCHDJDL9X&keywords=force+sensor&qid=1699259633&sprefix=force+sensor%2Caps%2C112&sr=8-8
+https://www.mouser.de/ProductDetail/Adafruit/3886?qs=xZ%2FP%252Ba9zWqYWl0i8uQS6xQ%3D%3D x2
 
-https://www.mouser.de/ProductDetail/Alpha-Taiwan/MF01A-N-221-A06?qs=DPoM0jnrROUz0OCYhhaQtg%3D%3D
+https://www.mouser.de/ProductDetail/DFRobot/SEN0142?qs=Zcin8yvlhnO0Rr0B1JJGiw%3D%3D x2
 
-ESP32
+## glove 
 
-https://www.amazon.de/-/en/diymore-NodeMcu-Development-2-4GHz-Bluetooth/dp/B0CC8KFL9J/ref=sr_1_5?crid=27YUHS0GVCA78&keywords=esp32&qid=1699259882&sprefix=esp32%2B%2Caps%2C107&sr=8-5&th=1
+https://www.mouser.de/ProductDetail/Desco/68128?qs=5aG0NVq1C4wk%2FnvpBlXyVA%3D%3D
 
-PLA Material
 
-https://www.amazon.de/-/en/PLA-Filament-Dimensional-Accuracy-Printing/dp/B07FQDKR28/ref=sr_1_5?crid=3GWSLY03QT324&keywords=pla%2Bfilament%2B1.75&qid=1699260056&sprefix=pla%2Caps%2C112&sr=8-5&th=1
-
-Flex Sensor 
+## Flex Sensor 
 
 2 axis x1
 1 axis x1
+
+## MPU 6050
+
+https://de.farnell.com/invensense/mpu-6050/gyro-beschl-messer-6achsen-i2c/dp/1864742RL?st=mpu%206050
+
+x10
