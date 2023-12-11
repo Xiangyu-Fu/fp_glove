@@ -19,6 +19,10 @@ https://www.mouser.de/ProductDetail/Desco/68128?qs=5aG0NVq1C4wk%2FnvpBlXyVA%3D%3
 
 ## MPU 6050
 
-https://de.farnell.com/invensense/mpu-6050/gyro-beschl-messer-6achsen-i2c/dp/1864742RL?st=mpu%206050
+https://www.mouser.de/ProductDetail/TDK-InvenSense/MPU-6050?qs=u4fy%2FsgLU9O14B5JgyQFvg%3D%3D x10
 
-x10
+## TCA9548A
+
+https://www.mouser.de/ProductDetail/Adafruit/2717?qs=FXKxjuMTmBk%252BXQsxVhda7A%3D%3D x1
+
+https://www.mouser.de/ProductDetail/Texas-Instruments/TCA9548APWR?qs=iFaFN7AS2WF%252BqSiJMbdYwQ%3D%3D x3
