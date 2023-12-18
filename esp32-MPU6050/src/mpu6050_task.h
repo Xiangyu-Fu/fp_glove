@@ -5,6 +5,8 @@
 #include <Adafruit_MPU6050.h>
 #include <Adafruit_Sensor.h>
 #include <Wire.h>
+
+#include "logger.h" 
 #include "task.h"
 
 class MPU6050Task : public Task<MPU6050Task> {
@@ -16,7 +18,7 @@ public:
 
     void addListener(QueueHandle_t queue);
     void setLogger(Logger* logger);
-    void publish();
+    void publish(sensors_event_t aEvent);
 
 protected:
     void run();
