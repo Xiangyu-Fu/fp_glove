@@ -1,18 +1,10 @@
 #include "mpu6050_task.h"
-#include "Adafruit_MPU6050.h"
 
-// Adafruit_MPU6050 mpu;
+Adafruit_MPU6050 mpu;
 
 MPU6050Task::MPU6050Task(const uint8_t task_core) 
-    : Task<MPU6050Task>("MPU6050Task", 8192, task_core) {
-    // Initialize the MPU6050 sensor
-    if (!mpu.begin()) {
-        Serial.println("Failed to find MPU6050 chip");
-        while (1) {
-            delay(10);
-        }
-    }
-    Serial.println("MPU6050 Found!");
+    : Task<MPU6050Task>("MPU6050Task", 2500, 1, task_core) {
+    mpu_queue = nullptr;  
 }
 
 MPU6050Task::~MPU6050Task() {
@@ -35,19 +27,105 @@ void MPU6050Task::publish(sensors_event_t aEvent) {
 }
 
 void MPU6050Task::run() {
-    // while (true) {
-    //     sensors_event_t accel;
-    //     mpu.getEvent(&accel);
+    Serial.println("MPU6050Task constructor");
+    // Try to initialize!
+    if (!mpu.begin()) {
+        Serial.println("Failed to find MPU6050 chip");
+        while (1) {
+        delay(10);
+        }
+    }
+    Serial.println("MPU6050 Found!");
 
-    //     // Log the data if logger is set
-    //     if (logger_) {
-    //         logger_->log(accel);
-    //     }
+    mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+    Serial.print("Accelerometer range set to: ");
+    switch (mpu.getAccelerometerRange()) {
+    case MPU6050_RANGE_2_G:
+        Serial.println("+-2G");
+        break;
+    case MPU6050_RANGE_4_G:
+        Serial.println("+-4G");
+        break;
+    case MPU6050_RANGE_8_G:
+        Serial.println("+-8G");
+        break;
+    case MPU6050_RANGE_16_G:
+        Serial.println("+-16G");
+        break;
+    }
+    mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+    Serial.print("Gyro range set to: ");
+    switch (mpu.getGyroRange()) {
+    case MPU6050_RANGE_250_DEG:
+        Serial.println("+- 250 deg/s");
+        break;
+    case MPU6050_RANGE_500_DEG:
+        Serial.println("+- 500 deg/s");
+        break;
+    case MPU6050_RANGE_1000_DEG:
+        Serial.println("+- 1000 deg/s");
+        break;
+    case MPU6050_RANGE_2000_DEG:
+        Serial.println("+- 2000 deg/s");
+        break;
+    }
 
-    //     // Publish the data
-    //     publish(accel);
+    mpu.setFilterBandwidth(MPU6050_BAND_5_HZ);
+    Serial.print("Filter bandwidth set to: ");
+    switch (mpu.getFilterBandwidth()) {
+    case MPU6050_BAND_260_HZ:
+        Serial.println("260 Hz");
+        break;
+    case MPU6050_BAND_184_HZ:
+        Serial.println("184 Hz");
+        break;
+    case MPU6050_BAND_94_HZ:
+        Serial.println("94 Hz");
+        break;
+    case MPU6050_BAND_44_HZ:
+        Serial.println("44 Hz");
+        break;
+    case MPU6050_BAND_21_HZ:
+        Serial.println("21 Hz");
+        break;
+    case MPU6050_BAND_10_HZ:
+        Serial.println("10 Hz");
+        break;
+    case MPU6050_BAND_5_HZ:
+        Serial.println("5 Hz");
+        break;
+    }
 
-    //     // Delay to control the frequency of readings
-    //     vTaskDelay(100 / portTICK_PERIOD_MS);
-    // }
+    Serial.println("");
+        /* Get new sensor events with the readings */
+    for (;;) {
+
+        sensors_event_t a, g, temp;
+        mpu.getEvent(&a, &g, &temp);
+
+        /* Print out the values */
+        Serial.print("Acceleration X: ");
+        Serial.print(a.acceleration.x);
+        Serial.print(", Y: ");
+        Serial.print(a.acceleration.y);
+        Serial.print(", Z: ");
+        Serial.print(a.acceleration.z);
+        Serial.println(" m/s^2");
+
+        Serial.print("Rotation X: ");
+        Serial.print(g.gyro.x);
+        Serial.print(", Y: ");
+        Serial.print(g.gyro.y);
+        Serial.print(", Z: ");
+        Serial.print(g.gyro.z);
+        Serial.println(" rad/s");
+
+        Serial.print("Temperature: ");
+        Serial.print(temp.temperature);
+        Serial.println(" degC");
+
+        Serial.println("");
+        vTaskDelay(pdMS_TO_TICKS(100));
+    }
+
 }
