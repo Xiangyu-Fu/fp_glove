@@ -19,6 +19,9 @@ public:
     void addListener(QueueHandle_t queue);
     void setLogger(Logger* logger);
     void publish(sensors_event_t aEvent);
+    void selectChannel(uint8_t bus);
+    void printValues();
+    void setMPU6050();
 
 protected:
     void run();
@@ -30,6 +33,7 @@ private:
     sensors_event_t a, g, temp;
     uint32_t mpu_last_publish;
     uint32_t mpu_publish_interval;
+
 };
 
 #endif
