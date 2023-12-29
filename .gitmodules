@@ -1,0 +1,3 @@
+[submodule "sensoring_glove_web_app"]
+	path = sensoring_glove_web_app
+	url = git@github.com:Xiangyu-Fu/sensoring_glove_web_app.git
